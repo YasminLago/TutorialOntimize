@@ -1,11 +1,27 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.ontimize</groupId>
-    <artifactId>bank-manager</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>bank-manager-server</artifactId>
-  <name>Bank Manager Server </name>
-  <description>Bank Manager Server </description>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ontimize</groupId>
+		<artifactId>bank-manager</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>bank-manager-server</artifactId>
+	<name>Bank Manager Server </name>
+	<description>Bank Manager Server </description>
+	<dependencies>
+		<!-- Dependencia ontimize-core a traves del modulo comun -->
+		<dependency>
+			<groupId>com.ontimize</groupId>
+			<artifactId>bank-manager-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- Dependencia para la conexion con la BD -->
+		<dependency>
+			<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>${hsqldb.version}</version>
+		</dependency>
+	</dependencies>
 </project>

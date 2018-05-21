@@ -13,6 +13,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<ontimize.version>5.5.1</ontimize.version> 
+		<hsqldb.version>1.8.0.10</hsqldb.version>
 	</properties>
 
 	<dependencies>
